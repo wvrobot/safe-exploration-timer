@@ -9,7 +9,7 @@
 }
 
 .display{
-	font-size: 30em;
+	font-size: min(30em, 40vw);
 }
 
 .button_title{
