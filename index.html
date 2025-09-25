@@ -10,18 +10,22 @@
 		<script src="https://kit.fontawesome.com/cfc6f09f27.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="timer_wrapper">
-			<div class="display mb-0" id="timer_display"></div>
+		<div class="timer_wrapper container">
+			<div class="row">
+				<div class="col display mb-0" id="timer_display"></div>
+			</div>
 
-			<button class="btn btn-success timer_button mt-0 mr-4" onclick="toggle()">
-				<div class="button_title mb-0" id="start_pause">Start</div>
-			</button>
-			<button class="btn btn-success timer_button mt-0 mr-4" onclick="increment_timer()">
-				<div class="button_title mb-0" id="increment_timer">+10s</div>
-			</button>
-			<button class="btn btn-danger timer_button mt-0" onclick="reset()">
-				<div class="button_title">Reset</div>
-			</button>
+			<div class="row">
+				<button class="col-sm btn btn-success timer_button mx-4 my-4" onclick="toggle()">
+					<div class="button_title mb-0" id="start_pause">Start</div>
+				</button>
+				<button class="col-sm btn btn-warning timer_button mx-4 my-4" onclick="increment_timer()">
+					<div class="button_title mb-0" id="increment_timer">+10s</div>
+				</button>
+				<button class="col-sm btn btn-danger timer_button mx-4 my-4" onclick="reset()">
+					<div class="button_title">Reset</div>
+				</button>
+			</div>
 
 		</div>
 		<script src="/timer.js"></script>
